@@ -2,7 +2,7 @@ import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { useSpring } from "react-spring";
 
-const App = () => {
+const DarkGlobe = () => {
   const canvasRef = useRef();
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
@@ -28,7 +28,7 @@ const App = () => {
       height: width * 2,
       phi: 0,
       theta: 0.3,
-      dark: 0,
+      dark: 1,
       diffuse: 3,
       mapSamples: 16000,
       mapBrightness: 6,
@@ -109,4 +109,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default DarkGlobe;
